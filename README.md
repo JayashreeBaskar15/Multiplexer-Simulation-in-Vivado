@@ -72,15 +72,15 @@ output Y;
 
 wire [3:0]w;
 
-and (w0, i[0], ~s[1], ~s[0]); 
+and (w0, I[0], ~S[1], ~S[0]); 
 
-and (w1, i[1], ~s[1], s[0]); 
+and (w[1], I[1], ~S[1], S[0]); 
 
-and (w2, i[2], s[1], ~s[0]);
+and (w[2], I[2], S[1], ~S[0]);
 
-and (w3, i[3], s[1], s[0]);
+and (w[3], I[3], S[1], S[0]);
 
-or (y, w0, w1, w2, w3);
+or (Y, w[0], w[1], w[2], w[3]);
 
 endmodule
 
